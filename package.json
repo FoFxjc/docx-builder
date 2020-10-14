@@ -11,12 +11,19 @@
     "url": "git+https://github.com/raulbojalil/docx-builder.git"
   },
   "keywords": [
-    "docx", "composition", "document", "office", "microsoft office", "microsoft word"
+    "docx",
+    "composition",
+    "document",
+    "office",
+    "microsoft office",
+    "microsoft word"
   ],
   "author": "Raúl Alberto Bojalil Becerra <me@raulbojalil.com>",
   "dependencies": {
+    "docx": "^5.3.0",
     "docxtemplater": "3.0.11",
-	"jszip" : "2.6.1"
+    "file-saver": "^2.0.2",
+    "jszip": "2.6.1"
   },
   "bugs": {
     "url": "https://github.com/raulbojalil/docx-builder/issues"

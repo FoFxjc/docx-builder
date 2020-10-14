@@ -1,0 +1,72 @@
+<html>
+<meta charset="utf-8">
+
+<head>
+  <tittle>js调用nodejs模块</tittle>
+  <script type="text/javascript" src="bundle.js"></script>
+  <script type="text/javascript">
+    function generate()
+    {
+      var builder = require('docx-builder-test');
+      var docx = new builder.Document();
+
+      //SET THE HEADER
+
+      docx.beginHeader();
+      docx.insertText("This is the header");
+      docx.endHeader();
+
+      //SET THE FOOTER
+
+      docx.beginFooter();
+      docx.insertText("This is the footer");
+      docx.endFooter();
+
+      //COMMON OPERATIONS
+
+      docx.setBold();
+      docx.unsetBold();
+      docx.setItalic();
+      docx.unsetItalic();
+      docx.setUnderline();
+      docx.unsetUnderline();
+      docx.setFont("Arial");
+      docx.setSize(40);
+      docx.rightAlign();
+      docx.centerAlign();
+      docx.leftAlign();
+      docx.insertText("Hello");
+
+      //INSERT A TABLE
+
+      docx.beginTable({ borderColor: "red", borderSize: 20 });
+      docx.insertRow();
+      docx.setItalic();
+      docx.setUnderline();
+      docx.insertText("ID");
+      docx.nextColumn();
+      docx.insertText("Username");
+      docx.nextRow();
+      docx.insertText("1");
+      docx.nextColumn();
+      docx.insertText("raulb");
+      docx.endTable();
+
+      //INSERT EXTERNAL FILES
+
+      docx.insertPageBreak();
+      //SAVE THE DOCX FILE
+
+      docx.save("output.docx", function (err)
+      {
+        if (err) console.log(err);
+      })
+    }
+  </script>
+</head>
+
+<body>
+  <input type="button" id="btn_post" onclick="generate()" value="测试调用node函数" />
+</body>
+
+</html>
