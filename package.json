@@ -1,6 +1,6 @@
 {
-  "name": "docx-builder",
-  "version": "1.0.7",
+  "name": "docx-builder4view",
+  "version": "0.1.0",
   "description": "Easily create or merge DOCX files from Node.js",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raulbojalil/docx-builder.git"
+    "url": "git+https://github.com/FoFxjc/docx-builder.git"
   },
   "keywords": [
     "docx",
@@ -18,7 +18,7 @@
     "microsoft office",
     "microsoft word"
   ],
-  "author": "Raúl Alberto Bojalil Becerra <me@raulbojalil.com>",
+  "author": "XU JIACHEN <liyingxujiachen@hotmail.com>",
   "dependencies": {
     "docx": "^5.3.0",
     "docxtemplater": "3.0.11",
@@ -26,7 +26,12 @@
     "jszip": "2.6.1"
   },
   "bugs": {
-    "url": "https://github.com/raulbojalil/docx-builder/issues"
+    "url": "https://github.com/FoFxjc/docx-builder/issues"
   },
-  "homepage": "https://github.com/raulbojalil/docx-builder#readme"
+  "homepage": "https://github.com/FoFxjc/docx-builder#readme",
+  "directories": {
+    "doc": "doc"
+  },
+  "devDependencies": {},
+  "license": "MIT"
 }
